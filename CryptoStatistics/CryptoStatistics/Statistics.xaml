@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CryptoStatistics.Statistics">
+
+    <ContentPage.Resources>
+        <Color x:Key="TextColor">#f2f2f2</Color>
+
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        </Style>
+
+    </ContentPage.Resources>
+    <StackLayout>
+        <SearchBar x:Name="searchBar" Placeholder="Search" TextChanged="SearchData"></SearchBar>
+        <ListView x:Name="listView" SelectionMode="None" Margin="20">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid ColumnSpacing="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="" Grid.Column="0" />
+                            <Label Text="{Binding Name}" Grid.Column="1" />
+                            <Label Text="{Binding ChangePercent24HrD, StringFormat='{0:F2}%'}" Grid.Column="2" />
+                            <Label Text="{Binding PriceUsdD, StringFormat='{0:F2}'}" Grid.Column="3" />
+
+                        </Grid>
+
+                    </ViewCell>
+
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </StackLayout>
+</ContentPage>
+
