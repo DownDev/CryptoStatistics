@@ -19,13 +19,12 @@ namespace CryptoStatistics
 
         private string GetPickerData()
         {
-            //get data from picker code here
-            return "";
+            return picker.Items[picker.SelectedIndex];
         }
 
         private async void GetApiData()
         {
-            var response = await ApiService.GetDataFromApiAsync<AssetsApiResponseModel>("https://api.coincap.io/v2/assets/", new Dictionary<string, string>() { { "limit", "5" } });
+            var response = await ApiService.GetDataFromApiAsync<AssetsApiResponseModel>("https://api.coincap.io/v2/assets/", new Dictionary<string, string>() { { "limit", GetPickerData() } });
             ApiData = response.Data.ToList();
             listView.ItemsSource = response.Data;
         }
@@ -34,6 +33,11 @@ namespace CryptoStatistics
         {
             var result = ApiData.Where(n => n.Name.ToLower().Contains(e.NewTextValue.ToLower()));
             listView.ItemsSource = result;
+        }
+
+        private void picker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GetApiData();
         }
     }
 }

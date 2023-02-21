@@ -15,7 +15,7 @@
     </ContentPage.Resources>
     <StackLayout>
         <SearchBar x:Name="searchBar" Placeholder="Search" TextChanged="SearchData"></SearchBar>
-        <Picker x:Name="picker" Title="Number of items to display" HorizontalTextAlignment="End" TextColor="{StaticResource TextColor}" HorizontalOptions="End" WidthRequest="40" Margin="20">
+        <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged" Title="Number of items to display" HorizontalTextAlignment="End" TextColor="{StaticResource TextColor}" HorizontalOptions="End" WidthRequest="40" Margin="20">
             <Picker.Items>
                 <x:String>5</x:String>
                 <x:String>10</x:String>
