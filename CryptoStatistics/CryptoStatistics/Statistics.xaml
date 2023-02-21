@@ -14,6 +14,17 @@
     </ContentPage.Resources>
     <StackLayout>
         <SearchBar x:Name="searchBar" Placeholder="Search" TextChanged="SearchData"></SearchBar>
+        <Picker x:Name="picker" Title="Number of items to display" HorizontalTextAlignment="End" TextColor="{StaticResource TextColor}" HorizontalOptions="End" WidthRequest="40" Margin="20">
+            <Picker.Items>
+                <x:String>5</x:String>
+                <x:String>10</x:String>
+                <x:String>15</x:String>
+                <x:String>25</x:String>
+                <x:String>50</x:String>
+                <x:String>100</x:String>
+            </Picker.Items>
+            <Picker.SelectedIndex>0</Picker.SelectedIndex>
+        </Picker>
         <ListView x:Name="listView" SelectionMode="None" Margin="20">
             <ListView.ItemTemplate>
                 <DataTemplate>
