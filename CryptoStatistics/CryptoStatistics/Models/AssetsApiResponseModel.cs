@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Xamarin.Forms;
 
 namespace CryptoStatistics.Models
 {
@@ -23,6 +24,10 @@ namespace CryptoStatistics.Models
         public string Vwap24Hr { get; set; }
         public string Explorer { get; set; }
 
+        public string SymbolPath => $"{Symbol}.png";
+
+        public Color PercentColor => ChangePercent24HrD >= 0 ? Color.LightGreen : Color.Red;
+
         public double SupplyD => double.Parse(Supply);
         public double MaxSupplyD => double.Parse(MaxSupply);
         public double MarketCapUsdD => double.Parse(MarketCapUsd);
@@ -30,5 +35,7 @@ namespace CryptoStatistics.Models
         public double PriceUsdD => double.Parse(PriceUsd);
         public double ChangePercent24HrD => double.Parse(ChangePercent24Hr);
         public double Vwap24HrD => double.Parse(Vwap24Hr);
+
+        public string PriceUsdFormatted => $"${PriceUsdD.ToString("N2")}";
     }
 }
