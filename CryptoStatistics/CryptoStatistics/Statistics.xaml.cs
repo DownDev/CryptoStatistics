@@ -35,7 +35,7 @@ namespace CryptoStatistics
             listView.ItemsSource = result;
         }
 
-        private void picker_SelectedIndexChanged(object sender, EventArgs e)
+        private void PickerValueChanged(object sender, EventArgs e)
         {
             GetApiData();
         }

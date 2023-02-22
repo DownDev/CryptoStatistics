@@ -24,7 +24,7 @@ namespace CryptoStatistics.Models
         public string Vwap24Hr { get; set; }
         public string Explorer { get; set; }
 
-        public string SymbolPath => $"{Symbol}.png";
+        public string SymbolLower => Symbol.ToLower();
 
         public Color PercentColor => ChangePercent24HrD >= 0 ? Color.LightGreen : Color.Red;
 

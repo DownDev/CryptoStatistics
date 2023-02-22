@@ -83,282 +83,383 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\drawable\GlobeIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+      <SubType></SubType>
+      <Generator></Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\HomeIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+      <SubType></SubType>
+      <Generator></Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\NewsIcon.png">
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\StatsIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+      <SubType></SubType>
+      <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\drawable\BTC.png">
+    <AndroidResource Include="Resources\drawable\AAVE.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\ADA.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ALGO.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ANKR.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\AR.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ATOM.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\AVAX.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\BAT.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\BCH.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\BNB.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\BSV.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\BTC.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\CELO.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\CHZ.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\COMP.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\CRV.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\DAI.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\DASH.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\DCR.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\DOGE.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\DOT.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\EGLD.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\ENJ.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\EOS.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\ETC.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\ETH.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\FIL.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\FTM.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\FTT.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\GT.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\GUSD.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\HBAR.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\HNT.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\HOT.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\HT.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\KAVA.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\KCS.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\KSM.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\LEO.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\LINK.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\LRC.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\LTC.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\MANA.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\MATIC.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\MIOTA.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\MKR.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\NEAR.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\NEO.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\NEXO.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\OKB.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\QTUM.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\RUNE.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\RVN.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\SNX.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\SOL.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\STX.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\THETA.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\TRX.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\TUSD.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\TWT.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\UNI.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\USDC.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\USDT.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\VET.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\WBTC.png">
+      <SubType></SubType>
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\XEM.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\XLM.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\XMR.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\XRP.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\XTZ.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\ZEC.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\ZIL.png">
+      <SubType></SubType>
+      <Generator></Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>
-      </SubType>
-      <Generator>
-      </Generator>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup />

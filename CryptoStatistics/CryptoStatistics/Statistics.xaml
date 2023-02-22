@@ -14,19 +14,21 @@
 
     </ContentPage.Resources>
     <StackLayout>
-        <SearchBar x:Name="searchBar" Placeholder="Search" TextChanged="SearchData"></SearchBar>
-        <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged" Title="Number of items to display" HorizontalTextAlignment="End" TextColor="{StaticResource TextColor}" HorizontalOptions="End" WidthRequest="40" Margin="20">
-            <Picker.Items>
-                <x:String>5</x:String>
-                <x:String>10</x:String>
-                <x:String>15</x:String>
-                <x:String>25</x:String>
-                <x:String>50</x:String>
-                <x:String>100</x:String>
-            </Picker.Items>
-            <Picker.SelectedIndex>0</Picker.SelectedIndex>
-        </Picker>
-        <ListView x:Name="listView" SelectionMode="None" Margin="20">
+        <StackLayout Orientation="Horizontal">
+            <SearchBar x:Name="searchBar" Placeholder="Search" PlaceholderColor="{StaticResource TextColor}" TextColor="{StaticResource TextColor}" TextChanged="SearchData"></SearchBar>
+            <Picker x:Name="picker" SelectedIndexChanged="PickerValueChanged" Title="Number of items to display" HorizontalTextAlignment="End" TextColor="{StaticResource TextColor}" HorizontalOptions="End" WidthRequest="40" Margin="20,0">
+                <Picker.Items>
+                    <x:String>5</x:String>
+                    <x:String>10</x:String>
+                    <x:String>15</x:String>
+                    <x:String>25</x:String>
+                    <x:String>50</x:String>
+                    <x:String>100</x:String>
+                </Picker.Items>
+                <Picker.SelectedIndex>0</Picker.SelectedIndex>
+            </Picker>
+        </StackLayout>
+        <ListView x:Name="listView" SelectionMode="None" Margin="20,0" SeparatorColor="Black">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -37,19 +39,14 @@
                                 <ColumnDefinition />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <Image Source="{Binding SymbolPath}" Grid.Column="0" />
+                            <Image Source="{Binding SymbolLower, StringFormat='https://coinicons-api.vercel.app/api/icon/{0}'}" Grid.Column="0" />
                             <Label Text="{Binding Name}" Grid.Column="1" />
                             <Label Text="{Binding ChangePercent24HrD, StringFormat='{0:F2}%'}" TextColor="{Binding PercentColor}" Grid.Column="2" />
-                            <Label Text="{Binding PriceUsdFormatted}" HorizontalTextAlignment="End" Grid.Column="3" />
-
+                            <Label Text="{Binding PriceUsdFormatted}" HorizontalTextAlignment="End" Margin="15,0" Grid.Column="3" />
                         </Grid>
-
                     </ViewCell>
-
                 </DataTemplate>
-
             </ListView.ItemTemplate>
-
         </ListView>
     </StackLayout>
 </ContentPage>
