@@ -47,6 +47,7 @@
                 <Picker.SelectedIndex>0</Picker.SelectedIndex>
             </Picker>
         </Grid>
+        <Button x:Name="sortButton" Clicked="SortData"></Button>
         <ListView
             x:Name="listView"
             Margin="20,0"
