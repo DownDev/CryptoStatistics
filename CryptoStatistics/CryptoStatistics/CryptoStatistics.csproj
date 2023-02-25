@@ -17,8 +17,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
+    <None Remove="Resources\Fonts\Poppins-SemiBold.ttf" />
     <None Remove="Services\" />
     <None Remove="Newtonsoft.Json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\Poppins-SemiBold.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

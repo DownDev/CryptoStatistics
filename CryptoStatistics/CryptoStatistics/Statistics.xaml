@@ -10,6 +10,7 @@
         <Style TargetType="Label">
             <Setter Property="TextColor" Value="{StaticResource TextColor}" />
             <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="FontFamily" Value="Poppins" />
         </Style>
 
     </ContentPage.Resources>

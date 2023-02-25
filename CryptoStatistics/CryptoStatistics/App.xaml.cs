@@ -2,6 +2,8 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("Poppins-SemiBold.ttf", Alias = "Poppins")]
+
 namespace CryptoStatistics
 {
     public partial class App : Application
