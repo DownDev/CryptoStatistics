@@ -56,7 +56,8 @@
             SeparatorColor="Black"
             IsPullToRefreshEnabled="True"
             IsRefreshing="False"
-            Refreshing="RefreshData">
+            Refreshing="RefreshData"
+            ItemTapped="ShowDetails">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

@@ -93,6 +93,12 @@ namespace CryptoStatistics
 
             sortButton.Text = $"Sort: {OrderByStatus}";
         }
+
+        private void ShowDetails(object sender, ItemTappedEventArgs e)
+        {
+            var data = e.Item as CryptoCurrencyData;
+            Navigation.PushModalAsync(new StatisticsDetails(data));
+        }
     }
 }
 
