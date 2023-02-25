@@ -39,6 +39,13 @@ namespace CryptoStatistics
         {
             GetApiData();
         }
+
+        private void RefreshData(object sender, EventArgs e)
+        {
+            GetApiData();
+            listView.ItemsSource = ApiData;
+            listView.EndRefresh();
+        }
     }
 }
 

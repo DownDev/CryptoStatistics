@@ -16,8 +16,8 @@
     <StackLayout>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
+                <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <SearchBar
                 x:Name="searchBar"
@@ -51,7 +51,10 @@
             x:Name="listView"
             Margin="20,0"
             SelectionMode="None"
-            SeparatorColor="Black">
+            SeparatorColor="Black"
+            IsPullToRefreshEnabled="True"
+            IsRefreshing="False"
+            Refreshing="RefreshData">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
