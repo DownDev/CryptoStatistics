@@ -1,22 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" xmlns:cryptostatistics="clr-namespace:CryptoStatistics"
-             android:TabbedPage.ToolbarPlacement="Bottom"
-            BarBackgroundColor="#2C2C2C"
-            SelectedTabColor="#1767DE"
-            UnselectedTabColor="LightGray"
-            
-             x:Class="CryptoStatistics.MainPage" BackgroundColor="#404040">
+<TabbedPage
+    x:Class="CryptoStatistics.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:cryptostatistics="clr-namespace:CryptoStatistics"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    BackgroundColor="#404040"
+    BarBackgroundColor="#2C2C2C"
+    SelectedTabColor="#1767DE"
+    UnselectedTabColor="LightGray">
 
 
 
-    <NavigationPage Title="Home" IconImageSource="HomeIcon.png">
-    </NavigationPage>
-    <cryptostatistics:Statistics Title="Stats" IconImageSource="StatsIcon.png">
-    </cryptostatistics:Statistics>
-    <NavigationPage Title="News" IconImageSource="NewsIcon.png">
-    </NavigationPage>
-    <NavigationPage Title="Site" IconImageSource="GlobeIcon.png">
-    </NavigationPage>
+    <NavigationPage Title="Home" IconImageSource="HomeIcon.png" />
+    <cryptostatistics:Statistics Title="Stats" IconImageSource="StatsIcon.png" />
+    <NavigationPage Title="News" IconImageSource="NewsIcon.png" />
+    <NavigationPage Title="Site" IconImageSource="GlobeIcon.png" />
 </TabbedPage>

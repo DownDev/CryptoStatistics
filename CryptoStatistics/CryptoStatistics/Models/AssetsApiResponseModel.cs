@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using Xamarin.Forms;
 
 namespace CryptoStatistics.Models
@@ -28,13 +29,13 @@ namespace CryptoStatistics.Models
 
         public Color PercentColor => ChangePercent24HrD >= 0 ? Color.LightGreen : Color.Red;
 
-        public double SupplyD => double.Parse(Supply);
-        public double MaxSupplyD => double.Parse(MaxSupply);
-        public double MarketCapUsdD => double.Parse(MarketCapUsd);
-        public double VolumeUsd24HrD => double.Parse(VolumeUsd24Hr);
-        public double PriceUsdD => double.Parse(PriceUsd);
-        public double ChangePercent24HrD => double.Parse(ChangePercent24Hr);
-        public double Vwap24HrD => double.Parse(Vwap24Hr);
+        public double SupplyD => double.Parse(Supply, CultureInfo.InvariantCulture);
+        public double MaxSupplyD => double.Parse(MaxSupply, CultureInfo.InvariantCulture);
+        public double MarketCapUsdD => double.Parse(MarketCapUsd, CultureInfo.InvariantCulture);
+        public double VolumeUsd24HrD => double.Parse(VolumeUsd24Hr, CultureInfo.InvariantCulture);
+        public double PriceUsdD => double.Parse(PriceUsd, CultureInfo.InvariantCulture);
+        public double ChangePercent24HrD => double.Parse(ChangePercent24Hr, CultureInfo.InvariantCulture);
+        public double Vwap24HrD => double.Parse(Vwap24Hr, CultureInfo.InvariantCulture);
 
         public string PriceUsdFormatted => $"${PriceUsdD.ToString("N2")}";
     }
