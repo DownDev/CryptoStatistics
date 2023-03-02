@@ -11,7 +11,7 @@ namespace CryptoStatistics
 {
     public partial class Statistics : ContentPage
     {
-        private ICollection<CryptoCurrencyData> ApiData;
+        private List<CryptoCurrencyData> ApiData;
         private OrderByStatusEnum OrderByStatus;
         public Statistics()
         {

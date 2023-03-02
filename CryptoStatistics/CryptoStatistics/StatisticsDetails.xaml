@@ -3,7 +3,9 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CryptoStatistics.StatisticsDetails"
-    BackgroundColor="#404040">
+    BackgroundColor="#404040"
+    xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+    xmlns:local="clr-namespace:Microcharts.Samples.Forms">
 
     <ContentPage.Resources>
         <Color x:Key="TextColor">#f2f2f2</Color>
@@ -16,6 +18,16 @@
 
     </ContentPage.Resources>
     <StackLayout>
-        <Label Text="test" x:Name="test"/>
+        <Grid ColumnSpacing="10" Padding="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="img" Grid.Column="0"/>
+            <Label x:Name="title" Grid.Column="1" FontSize="32" HorizontalTextAlignment="Center"></Label>
+        </Grid>
+        <Label x:Name="price" FontSize="32"></Label>
+        <Label x:Name="percent" FontSize="32"></Label>
+        <microcharts:ChartView x:Name="chartLine" HeightRequest="100" VerticalOptions="CenterAndExpand"/>
     </StackLayout>
 </ContentPage>
