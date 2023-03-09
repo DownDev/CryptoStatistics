@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using static System.Net.WebRequestMethods;
 
 namespace CryptoStatistics
 {
@@ -27,7 +26,7 @@ namespace CryptoStatistics
             img.Source = $"https://coinicons-api.vercel.app/api/icon/{data.SymbolLower}";
             title.Text = data.Name;
             price.Text = data.PriceUsdFormatted;
-            percent.Text = $"{data.ChangePercent24HrD}%";
+            percent.Text = $"{data.ChangePercent24HrD:F2}%";
             percent.TextColor = data.PercentColor;
         }
         //time = m1, m5, m15, m30, h1, h2, h6, h12, d1
@@ -41,11 +40,16 @@ namespace CryptoStatistics
                     {
                         Label="",
                         ValueLabel = item.priceUsd,
-                        Color = SKColor.Parse("#000000")
+                        Color = SKColor.Parse("#f2f2f2")
                     }
                 );
             }
             chart.Chart = new LineChart { Entries = chartEntries, LineMode = LineMode.Straight, PointMode = PointMode.None, BackgroundColor = SKColor.Parse("#404040"), LabelTextSize=0 };
+        }
+
+        async void OnGoBackClicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }

@@ -1,33 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage 
+<ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CryptoStatistics.StatisticsDetails"
     BackgroundColor="#404040"
-    xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
-    xmlns:local="clr-namespace:Microcharts.Samples.Forms">
+    xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms">
 
     <ContentPage.Resources>
-        <Color x:Key="TextColor">#f2f2f2</Color>
-
-        <Style TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource TextColor}" />
-            <Setter Property="VerticalOptions" Value="Center" />
-            <Setter Property="FontFamily" Value="Poppins" />
-        </Style>
-
+        <ResourceDictionary>
+            <Color
+                x:Key="TextColor">#f2f2f2</Color>
+            <Style
+                TargetType="Label">
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource TextColor}" />
+                <Setter
+                    Property="Margin"
+                    Value="10,5,10,0" />
+                <Setter
+                    Property="FontSize"
+                    Value="24" />
+            </Style>
+        </ResourceDictionary>
     </ContentPage.Resources>
     <StackLayout>
-        <Grid ColumnSpacing="10" Padding="5">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Image x:Name="img" Grid.Column="0"/>
-            <Label x:Name="title" Grid.Column="1" FontSize="32" HorizontalTextAlignment="Center"></Label>
-        </Grid>
-        <Label x:Name="price" FontSize="32"></Label>
-        <Label x:Name="percent" FontSize="32"></Label>
-        <microcharts:ChartView x:Name="chartLine" HeightRequest="100" VerticalOptions="CenterAndExpand"/>
+        <FlexLayout
+            Margin="10">
+            <Image
+                x:Name="img"
+                HeightRequest="50"
+                WidthRequest="50"
+                Aspect="AspectFit" />
+            <StackLayout
+                Margin="10,0,0,0">
+                <Label
+                    x:Name="title"
+                    FontSize="30"
+                    FontAttributes="Bold" />
+                <StackLayout
+                    Orientation="Horizontal"
+                    Spacing="5">
+                    <Label
+                        x:Name="price" />
+                    <Label
+                        Text="|" />
+                    <Label
+                        x:Name="percent" />
+                </StackLayout>
+            </StackLayout>
+        </FlexLayout>
+        <microcharts:ChartView
+            x:Name="chartLine"
+            HeightRequest="200"
+            VerticalOptions="CenterAndExpand" />
+        <Button
+            Text="Go Back"
+            BackgroundColor="#2196F3"
+            TextColor="{StaticResource TextColor}"
+            CornerRadius="5"
+            Clicked="OnGoBackClicked"
+            Padding="10,5"
+            Margin="10,0,10,10" />
     </StackLayout>
 </ContentPage>

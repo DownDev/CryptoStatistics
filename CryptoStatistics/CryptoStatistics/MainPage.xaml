@@ -13,8 +13,16 @@
 
 
 
-    <NavigationPage Title="Home" IconImageSource="HomeIcon.png" />
-    <cryptostatistics:Statistics Title="Stats" IconImageSource="StatsIcon.png" />
-    <NavigationPage Title="News" IconImageSource="NewsIcon.png" />
-    <NavigationPage Title="Site" IconImageSource="GlobeIcon.png" />
+    <NavigationPage
+        Title="Home"
+        IconImageSource="HomeIcon.png" />
+    <cryptostatistics:Statistics
+        Title="Stats"
+        IconImageSource="StatsIcon.png" />
+    <NavigationPage
+        Title="News"
+        IconImageSource="NewsIcon.png" />
+    <NavigationPage
+        Title="Site"
+        IconImageSource="GlobeIcon.png" />
 </TabbedPage>

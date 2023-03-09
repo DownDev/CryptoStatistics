@@ -5,20 +5,28 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <ContentPage.Resources>
-        <Color x:Key="TextColor">#f2f2f2</Color>
+        <Color
+            x:Key="TextColor">#f2f2f2</Color>
 
-        <Style TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource TextColor}" />
-            <Setter Property="VerticalOptions" Value="Center" />
-            <Setter Property="FontFamily" Value="Poppins" />
+        <Style
+            TargetType="Label">
+            <Setter
+                Property="TextColor"
+                Value="{StaticResource TextColor}" />
+            <Setter
+                Property="VerticalOptions"
+                Value="Center" />
+            <Setter
+                Property="FontFamily"
+                Value="Poppins" />
         </Style>
 
     </ContentPage.Resources>
     <StackLayout>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition />
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <SearchBar
                 x:Name="searchBar"
@@ -31,12 +39,13 @@
                 x:Name="picker"
                 Title="Number of items to display"
                 Grid.Column="1"
-                Margin="0,0,20,0"
+                Margin="0,0,15,0"
                 HorizontalOptions="End"
                 HorizontalTextAlignment="End"
                 SelectedIndexChanged="PickerValueChanged"
                 TextColor="{StaticResource TextColor}"
-                WidthRequest="40">
+                WidthRequest="50"
+                HeightRequest="60">
                 <Picker.Items>
                     <x:String>5</x:String>
                     <x:String>10</x:String>
@@ -48,7 +57,14 @@
                 <Picker.SelectedIndex>0</Picker.SelectedIndex>
             </Picker>
         </Grid>
-        <Button x:Name="sortButton" Clicked="SortData"></Button>
+        <Button
+            x:Name="sortButton"
+            Clicked="SortData"
+            BackgroundColor="#2196F3"
+            TextColor="{StaticResource TextColor}"
+            CornerRadius="5"
+            Padding="10,5"
+            Margin="10,5,10,0" />
         <ListView
             x:Name="listView"
             Margin="20,0"
@@ -61,15 +77,23 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid ColumnSpacing="10">
+                        <Grid
+                            ColumnSpacing="10">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="30" />
-                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition
+                                    Width="30" />
+                                <ColumnDefinition
+                                    Width="2*" />
                                 <ColumnDefinition />
-                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition
+                                    Width="2*" />
                             </Grid.ColumnDefinitions>
-                            <Image Grid.Column="0" Source="{Binding SymbolLower, StringFormat='https://coinicons-api.vercel.app/api/icon/{0}'}" />
-                            <Label Grid.Column="1" Text="{Binding Name}" />
+                            <Image
+                                Grid.Column="0"
+                                Source="{Binding SymbolLower, StringFormat='https://coinicons-api.vercel.app/api/icon/{0}'}" />
+                            <Label
+                                Grid.Column="1"
+                                Text="{Binding Name}" />
                             <Label
                                 Grid.Column="2"
                                 Text="{Binding ChangePercent24HrD, StringFormat='{0:F2}%'}"
