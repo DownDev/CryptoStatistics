@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CryptoStatistics.Data;
+using System;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,6 +10,20 @@ namespace CryptoStatistics
 {
     public partial class App : Application
     {
+        private static CryptoData database;
+
+        public static CryptoData Database
+        {
+            get
+            {
+                if(database == null)
+                {
+                    database = new CryptoData(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "CryptoDb.db3"));
+                }
+                return database;
+            }
+        }
+
         public App ()
         {
             InitializeComponent();

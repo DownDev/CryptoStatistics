@@ -100,12 +100,16 @@ namespace CryptoStatistics
             Navigation.PushModalAsync(new StatisticsDetails(data));
         }
 
-        void AddToWatching(object sender, EventArgs e)
+        async void AddToWatching(object sender, EventArgs e)
         {
             MenuItem menu = sender as MenuItem;
             CryptoCurrencyData crypto = menu.CommandParameter as CryptoCurrencyData;
-
-            // add to list
+            var data = await App.Database.GetCryptoCurrencies();
+            var result = data.FirstOrDefault(n=>n.Name ==  crypto.Id);
+            if(result == null)
+            {
+                await App.Database.AddElement(crypto);
+            }
         }
     }
 }

@@ -71,7 +71,9 @@
                                     Padding="5"
                                     HorizontalOptions="End"
                                     WidthRequest="50"
-                                    Source="notification.png" />
+                                    Source="notification.png"
+                                    Clicked="ImageButton_Clicked" 
+                                    CommandParameter="{Binding Id}"/>
                             </Grid>
                         </Frame>
                     </ViewCell>
