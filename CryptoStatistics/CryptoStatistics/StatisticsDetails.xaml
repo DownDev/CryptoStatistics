@@ -8,13 +8,8 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Color
-                x:Key="TextColor">#f2f2f2</Color>
             <Style
                 TargetType="Label">
-                <Setter
-                    Property="TextColor"
-                    Value="{StaticResource TextColor}" />
                 <Setter
                     Property="Margin"
                     Value="10,5,10,0" />

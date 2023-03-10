@@ -3,5 +3,22 @@
     x:Class="CryptoStatistics.App"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <Application.Resources />
+    <Application.Resources>
+        <Color
+            x:Key="TextColor">#f2f2f2</Color>
+
+        <Style
+            TargetType="Label">
+            <Setter
+                Property="TextColor"
+                Value="{StaticResource TextColor}" />
+            <Setter
+                Property="VerticalOptions"
+                Value="Center" />
+            <Setter
+                Property="FontFamily"
+                Value="Poppins" />
+        </Style>
+
+    </Application.Resources>
 </Application>

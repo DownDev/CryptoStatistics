@@ -13,7 +13,7 @@
 
 
 
-    <NavigationPage
+    <cryptostatistics:Home
         Title="Home"
         IconImageSource="HomeIcon.png" />
     <cryptostatistics:Statistics
