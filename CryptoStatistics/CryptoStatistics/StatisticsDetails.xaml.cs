@@ -47,7 +47,7 @@ namespace CryptoStatistics
             chart.Chart = new LineChart { Entries = chartEntries, LineMode = LineMode.Straight, PointMode = PointMode.None, BackgroundColor = SKColor.Parse("#404040"), LabelTextSize=0 };
         }
 
-        async void OnGoBackClicked(System.Object sender, System.EventArgs e)
+        async void OnGoBackClicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();
         }
