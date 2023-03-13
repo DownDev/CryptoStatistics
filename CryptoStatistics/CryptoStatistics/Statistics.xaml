@@ -92,7 +92,7 @@
                                 Text="Watch"
                                 Clicked="AddToWatching"
                                 CommandParameter="{Binding .}"
-                                IconImageSource="notification.png" />
+                                IconImageSource="filled_star.png" />
                         </ViewCell.ContextActions>
                     </ViewCell>
                 </DataTemplate>

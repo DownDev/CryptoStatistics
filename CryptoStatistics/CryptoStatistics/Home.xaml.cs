@@ -19,7 +19,6 @@ namespace CryptoStatistics
         }
         private async void GetCryptoList()
         {
-            // display list not api call
             var cryptoCurrencies = await App.Database.GetCryptoCurrencies();
             var result = new List<CryptoCurrencyData>();
             foreach (var item in cryptoCurrencies)
@@ -39,16 +38,22 @@ namespace CryptoStatistics
             ApiData = response.Data.ToList();
             GetCryptoList();
         }
-        private void OnCryptoSelected(object sender, SelectedItemChangedEventArgs e)
+        private void OnCryptoTapped(object sender, ItemTappedEventArgs e)
         {
-            
+            var data = e.Item as CryptoCurrencyData;
+            Navigation.PushModalAsync(new StatisticsDetails(data));
         }
 
-        private async void ImageButton_Clicked(object sender, EventArgs e)
+        private async void RemoveFromWatching(object sender, EventArgs e)
         {
-            var item = (string)(sender as ImageButton).CommandParameter;
+            var item = (sender as ImageButton).CommandParameter as CryptoCurrencyData;
 
-            await App.Database.DeleteElement(item);
+            bool delete = await DisplayAlert($"Delete {item.Name}", $"Do you want to remove {item.Name} from your Watchlist?", "Yes", "No");
+            if (!delete)
+            {
+                return;
+            }
+            await App.Database.DeleteElement(item.Id);
 
             GetCryptoList();
         }
@@ -56,7 +61,7 @@ namespace CryptoStatistics
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            if(ApiData!= null)
+            if(ApiData != null)
             {
                 GetCryptoList();
             }

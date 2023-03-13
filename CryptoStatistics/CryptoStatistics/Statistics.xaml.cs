@@ -109,6 +109,7 @@ namespace CryptoStatistics
             if(result == null)
             {
                 await App.Database.AddElement(crypto);
+                await DisplayAlert("Dodano", $"Pomyślnie dodano {crypto.Name}", "OK");
             }
         }
     }
