@@ -27,12 +27,16 @@ namespace CryptoStatistics.Data
 
         public async Task<List<CryptoCurrency>> AddElement(CryptoCurrencyData data)
         {
-            var resultData = new CryptoCurrency()
+            var cryptoCurrencies = await GetCryptoCurrencies();
+            if (cryptoCurrencies.Count()<3)
             {
-                Name = data.Id,
-                TimeStamp = DateTime.UtcNow.ToString()
-            };
-            await database.InsertAsync(resultData);
+                var resultData = new CryptoCurrency()
+                {
+                    Name = data.Id,
+                    TimeStamp = DateTime.UtcNow.ToString()
+                };
+                await database.InsertAsync(resultData);
+            }
             return await GetCryptoCurrencies();
         }
 

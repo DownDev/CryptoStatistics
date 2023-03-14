@@ -109,7 +109,18 @@ namespace CryptoStatistics
             if(result == null)
             {
                 await App.Database.AddElement(crypto);
-                await DisplayAlert("Dodano", $"Pomyślnie dodano {crypto.Name}", "OK");
+                if(data.Count < 3)
+                {
+                    await DisplayAlert("Dodano", $"Pomyślnie dodano {crypto.Name}", "OK");
+                }
+                else
+                {
+                    await DisplayAlert("Nie dodano", $"Osiągnąłeś limit śledzonych kryptowalut: 3", "OK");
+                }
+            }
+            else
+            {
+                await DisplayAlert("Nie dodano", $"Śledzisz już tą krypotowalutę", "OK");
             }
         }
     }
