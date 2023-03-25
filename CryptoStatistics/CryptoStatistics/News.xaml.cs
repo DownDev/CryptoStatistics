@@ -10,7 +10,7 @@ namespace CryptoStatistics
 	public partial class News : ContentPage
 	{
 		private List<Post> ApiData;
-		public News ()
+		public News()
 		{
 			InitializeComponent();
 			GetNews();
@@ -18,11 +18,9 @@ namespace CryptoStatistics
 
 		private async void GetNews()
 		{
-			var result = await ApiService.GetDataFromApiAsync<NewsDataModel>("https://newsdata.io/api/1/news", new Dictionary<string, string> { { "apikey", "pub_183905a322fff00caadd3e6acebb7cec2c803" }, { "q", "bitcoin" } });
+			var result = await ApiService.GetDataFromApiAsync<NewsDataModel>("https://newsdata.io/api/1/news", new Dictionary<string, string> { { "apikey", "pub_183905a322fff00caadd3e6acebb7cec2c803" }, { "language", "pl,en" }, { "q", "bitcoin" } });
 			ApiData = result.results.ToList();
-
 			NewsListView.ItemsSource = ApiData;
-
         }
 
         async void OnNewsTapped(object sender, ItemTappedEventArgs e)
