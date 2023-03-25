@@ -15,7 +15,6 @@ namespace CryptoStatistics
         {
             InitializeComponent();
             GetDataFromApi();
-            
         }
         private async void GetCryptoList()
         {

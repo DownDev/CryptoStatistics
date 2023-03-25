@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CryptoStatistics.NewsDetails"
+    BackgroundColor="#404040">
+    <StackLayout Margin="10">
+        <Image
+            Source="{Binding image_url}"
+            WidthRequest="{Binding img_size}"
+            HeightRequest="{Binding img_size}" />
+        <Label
+            Text="{Binding title}"
+            FontSize="Medium" />
+        <ScrollView
+            Margin="10">
+            <Label
+                Text="{Binding content}"
+                FontSize="Small" />
+        </ScrollView>
+        <Button
+            Text="Go Back"
+            BackgroundColor="#2196F3"
+            TextColor="{StaticResource TextColor}"
+            CornerRadius="5"
+            Clicked="OnGoBackClicked"
+            Padding="10,5"
+            Margin="10,0,10,10" />
+    </StackLayout>
+</ContentPage>
+

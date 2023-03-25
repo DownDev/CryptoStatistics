@@ -19,7 +19,7 @@
     <cryptostatistics:Statistics
         Title="Stats"
         IconImageSource="StatsIcon.png" />
-    <NavigationPage
+    <cryptostatistics:News
         Title="News"
         IconImageSource="NewsIcon.png" />
     <NavigationPage
