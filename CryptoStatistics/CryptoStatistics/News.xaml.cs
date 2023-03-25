@@ -28,6 +28,12 @@ namespace CryptoStatistics
 			var data = e.Item as Post;
 			await Navigation.PushModalAsync(new NewsDetails(data));
         }
+
+        private void NewsRefresh(object sender, EventArgs e)
+        {
+			GetNews();
+            NewsListView.EndRefresh();
+        }
     }
 }
 
