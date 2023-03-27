@@ -22,7 +22,7 @@
     <cryptostatistics:News
         Title="News"
         IconImageSource="NewsIcon.png" />
-    <NavigationPage
-        Title="Site"
+    <cryptostatistics:About
+        Title="About"
         IconImageSource="GlobeIcon.png" />
 </TabbedPage>
