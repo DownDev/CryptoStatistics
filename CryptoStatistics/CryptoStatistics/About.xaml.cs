@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
-
 namespace CryptoStatistics
 {	
 	public partial class About : ContentPage
-	{	
-		public About()
+	{
+		public Command TapCommand => new Command<string>(async (url) => await Launcher.OpenAsync(url));
+        public About()
 		{
 			InitializeComponent();
+			BindingContext = this;
 		}
 	}
 }

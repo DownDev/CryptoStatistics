@@ -32,13 +32,13 @@ namespace CryptoStatistics
             var response = await ApiService.GetDataFromApiAsync<AssetsApiResponseModel>("https://api.coincap.io/v2/assets/", new Dictionary<string, string>() { { "limit", GetPickerData() } });
             ApiData = response.Data.ToList();
 
-            listView.ItemsSource = !string.IsNullOrEmpty(searchBar.Text) ? 
+            listView.ItemsSource = !string.IsNullOrEmpty(searchBar.Text) ?
                 ApiData.Where(n => n.Name.ToLower().Contains(searchBar.Text.ToLower())) : ApiData;
         }
 
         private List<CryptoCurrencyData> SortedData()
         {
-            if(OrderByStatus == OrderByStatusEnum.Default)
+            if (OrderByStatus == OrderByStatusEnum.Default)
             {
                 var result = !string.IsNullOrEmpty(searchBar.Text) ?
                     ApiData.Where(n => n.Name.ToLower().Contains(searchBar.Text.ToLower())).OrderBy(n => n.PriceUsdD).ToList() :
@@ -47,7 +47,7 @@ namespace CryptoStatistics
                 OrderByStatus = OrderByStatusEnum.Ascending;
                 return result;
             }
-            else if(OrderByStatus == OrderByStatusEnum.Ascending)
+            else if (OrderByStatus == OrderByStatusEnum.Ascending)
             {
                 var result = !string.IsNullOrEmpty(searchBar.Text) ?
                     ApiData.Where(n => n.Name.ToLower().Contains(searchBar.Text.ToLower())).OrderByDescending(n => n.PriceUsdD).ToList() :
@@ -94,10 +94,10 @@ namespace CryptoStatistics
             sortButton.Text = $"Sort: {OrderByStatus}";
         }
 
-        private void ShowDetails(object sender, ItemTappedEventArgs e)
+        private async void ShowDetails(object sender, ItemTappedEventArgs e)
         {
             var data = e.Item as CryptoCurrencyData;
-            Navigation.PushModalAsync(new StatisticsDetails(data));
+            await Navigation.PushModalAsync(new StatisticsDetails(data));
         }
 
         async void AddToWatching(object sender, EventArgs e)
@@ -105,22 +105,22 @@ namespace CryptoStatistics
             MenuItem menu = sender as MenuItem;
             CryptoCurrencyData crypto = menu.CommandParameter as CryptoCurrencyData;
             var data = await App.Database.GetCryptoCurrencies();
-            var result = data.FirstOrDefault(n=>n.Name ==  crypto.Id);
-            if(result == null)
+            var result = data.FirstOrDefault(n => n.Name == crypto.Id);
+            if (result == null)
             {
                 await App.Database.AddElement(crypto);
-                if(data.Count < 3)
+                if (data.Count < 3)
                 {
-                    await DisplayAlert("Dodano", $"Pomyślnie dodano {crypto.Name}", "OK");
+                    await DisplayAlert("Added", $"Successfully added {crypto.Name}", "OK");
                 }
                 else
                 {
-                    await DisplayAlert("Nie dodano", $"Osiągnąłeś limit śledzonych kryptowalut: 3", "OK");
+                    await DisplayAlert("Not added", $"You have reached the limit of tracked cryptocurrencies: 3", "OK");
                 }
             }
             else
             {
-                await DisplayAlert("Nie dodano", $"Śledzisz już tą krypotowalutę", "OK");
+                await DisplayAlert("Not added", $"You are already tracking this cryptocurrency", "OK");
             }
         }
     }
