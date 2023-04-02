@@ -26,6 +26,8 @@ namespace CryptoStatistics.Models
         public string Explorer { get; set; }
 
         public string SymbolLower => Symbol.ToLower();
+        public string PhotoName => $"{SymbolLower}-{Id}";
+
 
         public Color PercentColor => ChangePercent24HrD >= 0 ? Color.LightGreen : Color.Red;
 

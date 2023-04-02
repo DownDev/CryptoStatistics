@@ -100,6 +100,34 @@
                     FontSize="Small" />
             </StackLayout>
         </StackLayout>
+
+        <StackLayout
+            Orientation="Horizontal"
+            Padding="10">
+            <StackLayout>
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Medium">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span
+                                Text="Michał Białożyt"
+                                TextColor="#324ca8"
+                                TextDecorations="Underline">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Command="{Binding TapCommand}"
+                                        CommandParameter="https://github.com/sachcim" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label
+                    Text="Designer"
+                    FontSize="Small" />
+            </StackLayout>
+        </StackLayout>
     </StackLayout>
 </ContentPage>
 

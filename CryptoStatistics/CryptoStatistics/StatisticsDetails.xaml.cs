@@ -23,7 +23,7 @@ namespace CryptoStatistics
 		{
 			InitializeComponent ();
             GenerateChart(data.Id,"d1",chartLine);
-            img.Source = $"https://coinicons-api.vercel.app/api/icon/{data.SymbolLower}";
+            img.Source = $"https://cryptocurrencyliveprices.com/img/{data.PhotoName}.png";
             title.Text = data.Name;
             price.Text = data.PriceUsdFormatted;
             percent.Text = $"{data.ChangePercent24HrD:F2}%";

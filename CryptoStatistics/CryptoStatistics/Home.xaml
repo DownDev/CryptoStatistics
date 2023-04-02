@@ -43,7 +43,7 @@
                                     <Image
                                         WidthRequest="30"
                                         HeightRequest="30"
-                                        Source="{Binding SymbolLower, StringFormat='https://coinicons-api.vercel.app/api/icon/{0}'}" />
+                                        Source="{Binding PhotoName, StringFormat='https://cryptocurrencyliveprices.com/img/{0}.png'}" />
                                     <Label
                                         Text="{Binding Name}"
                                         FontSize="Large"
