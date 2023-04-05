@@ -11,7 +11,7 @@ We've created simple Xamarin.Forms app to track your favourite crypto!
 ## Screenshots
 Home page without favourite crypto
 
-![App Screenshot](https://media.discordapp.net/attachments/977298345657794580/1092371733627031583/Screenshot_20230403_105439.jpg?width=188&height=409)
+![App Screenshot](https://media.discordapp.net/attachments/977298345657794580/1092371733627031583/Screenshot_20230403_105439.jpg?width=566&height=1229)
 
 List of available cryptos
 
