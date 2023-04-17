@@ -6,7 +6,7 @@ namespace CryptoStatistics
 {	
 	public partial class About : ContentPage
 	{
-		public Command TapCommand => new Command<string>(async (url) => await Launcher.OpenAsync(url));
+		public Command TapCommand => new Command<string>(async (url) => await Browser.OpenAsync(url, BrowserLaunchMode.SystemPreferred));
         public About()
 		{
 			InitializeComponent();
