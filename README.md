@@ -1,17 +1,19 @@
 
 # Crypto Statistics
 
-We've created simple Xamarin.Forms app to track your favourite crypto!
+### We've created simple Xamarin.Forms app to track your favourite crypto!
+### This app was created using C# language.
+#### App connects to the following APIs:
+- <https://coincap.io>
+- <https://newsdata.io>
 
-
-
+#### Used libraries:
+- <https://github.com/microcharts-dotnet/Microcharts> - Used to display charts showing cryptocurrency prices
 
 
 
 ## Screenshots
-
-<br/>
-<h3><p>Home page without favourite crypto</p></h3>
+<h3><p>Home page with favourite crypto</p></h3>
 <div style="display:flex;">
 <img src="https://media.discordapp.net/attachments/977298345657794580/1092371733627031583/Screenshot_20230403_105439.jpg?width=566&height=1229"  width="32%" height="32%">
 </div>
